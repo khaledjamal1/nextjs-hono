@@ -15,8 +15,7 @@
     "tailwind-merge": "^2.6.0"
   },
   "devDependencies": {
-    "@monorepo/tsconfig": "workspace:*",
-    "@monorepo/eslint-config": "workspace:*"
+    "@monorepo/tsconfig": "workspace:*"
   },
   "exports": {
     ".": "./src",

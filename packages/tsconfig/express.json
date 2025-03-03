@@ -1,22 +1,16 @@
 {
   "$schema": "https://json.schemastore.org/tsconfig",
-  "display": "ExpressJS Server",
-  "ts-node": {
-    "compilerOptions": {
-      "module": "commonjs",
-      "moduleResolution": "Node10"
-    }
-  },
+  "display": "HonoJs Server",
   "compilerOptions": {
-    "target": "ES2022",
-    "verbatimModuleSyntax": false,
+    "target": "ESNext",
     "module": "NodeNext",
-    "sourceMap": true,
-    "moduleResolution": "nodenext",
-    "resolveJsonModule": true,
-    "esModuleInterop": true,
-    "noImplicitAny": true,
-    "removeComments": true,
-    "strict": true
+    "strict": true,
+    "verbatimModuleSyntax": false,
+    "skipLibCheck": true,
+    "types": [
+      "node"
+    ],
+    "jsx": "react-jsx",
+    "jsxImportSource": "hono/jsx",
   }
 }

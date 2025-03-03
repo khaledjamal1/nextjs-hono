@@ -3,27 +3,21 @@
   "author": "Ives Furtado | @ivesfurtado",
   "version": "1.0.0",
   "description": "",
-  "main": "build/main.js",
+  "main": "build/index.js",
   "keywords": [],
   "license": "ISC",
   "scripts": {
-    "dev": "ts-node-dev --transpile-only src/main.ts",
-    "build": "tsc",
-    "lint": "eslint .",
-    "start": "node dist/main.js"
+    "dev": "tsx watch src/index.ts",
+    "start": "node dist/index.js"
   },
   "dependencies": {
     "@monorepo/types": "workspace:*",
-    "cors": "2.8.5",
-    "express": "^5.0.1",
-    "morgan": "^1.10.0",
-    "ts-node-dev": "^2.0.0"
+    "@hono/node-server": "^1.13.8",
+    "hono": "^4.7.2"
   },
   "devDependencies": {
     "@monorepo/tsconfig": "workspace:*",
-    "@monorepo/eslint-config": "workspace:*",
-    "@types/cors": "2.8.17",
-    "@types/express": "^5.0.0",
-    "@types/morgan": "^1.9.9"
+    "@types/node": "^20.11.17",
+    "tsx": "^4.7.1"
   }
 }
